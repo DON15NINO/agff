@@ -30,12 +30,4 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 });
 
-client.on('message', message=> {
-    if (message.author.bot) return;
-    if (message.isMentioned(client.user))
-    {
-    message.reply("هلا حوبي محمد خالد قافل انا الاستريمنق لما يفتح يكلمك");
-    }
-});
-
 client.login(process.env.BOT_TOKEN);
