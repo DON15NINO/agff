@@ -31,3 +31,12 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 client.login(process.env.BOT_TOKEN);
+
+
+client.on('message', message=> {
+    if (message.author.bot) return;
+    if (message.isMentioned(client.user))
+    {
+    message.reply("Heloo MohamedKhalyd Ofline");
+    }
+});
